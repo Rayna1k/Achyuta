@@ -80,11 +80,12 @@ header nav a:hover {
 }
 
 .product-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
 }
+
 
 .product-card {
   background: #fff;
