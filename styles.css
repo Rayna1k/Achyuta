@@ -48,13 +48,18 @@ header nav a:hover {
    Hero Section
 ====================== */
 .hero {
-  background-image: url('images/banner.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 80px 0;
   text-align: center;
-  color: #fff;
+  margin-bottom: 30px;
 }
+
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 
 
 .hero h2 {
