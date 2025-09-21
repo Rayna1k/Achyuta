@@ -46,14 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function updateSlide() {
-      slides.style.transform = `translateX(-${currentIndex * 320}px)`; // 320 = image width
+     const imageWidth = images[0].clientWidth; // get actual width dynamically
+     slides.style.transform = `translateX(-${currentIndex * imageWidth}px)`;  
     }
+    window.addEventListener("resize", updateSlide); // Update on resize
   });
 });
-function updateSlide() {
-  const imageWidth = images[0].clientWidth; // get actual width dynamically
-  slides.style.transform = `translateX(-${currentIndex * imageWidth}px)`; 
-}
 
-window.addEventListener("resize", updateSlide); // Update on resize
+
+
 
