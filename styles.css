@@ -48,10 +48,14 @@ header nav a:hover {
    Hero Section
 ====================== */
 .hero {
-  background: #e0f0ff;
-  padding: 40px 0;
+  background-image: url('images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
   text-align: center;
+  color: #fff;
 }
+
 
 .hero h2 {
   margin-bottom: 10px;
@@ -92,9 +96,11 @@ header nav a:hover {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 300px;
+  width: 100%;   /* let grid control the width */
+  max-width: 320px;  /* optional max width */
   text-align: center;
 }
+
 
 .product-card h3 {
   margin: 10px 0 5px 0;
