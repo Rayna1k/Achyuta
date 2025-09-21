@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   function updateSlide() {
-    slides.style.transform = `translateX(-${currentIndex * 300}px)`; 
+    slides.style.transform = `translateX(-${currentIndex * images[0].clientWidth }px)`; 
   }
 });
 
