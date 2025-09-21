@@ -210,6 +210,24 @@ footer {
   border-radius: 50%;
 }
 
+.slider {
+  width: 100%;          /* Visible area */
+  overflow: hidden;     /* Hide overflowing images */
+  position: relative;
+}
+
+.slides {
+  display: flex;        /* Arrange images in a row */
+  transition: transform 0.5s ease;  /* Smooth slide */
+}
+
+.slides img {
+  width: 100%;          /* Each image takes full width of slider */
+  flex-shrink: 0;       /* Prevent images from shrinking */
+  object-fit: cover;    /* Optional: maintain aspect ratio */
+}
+
+
 .prev { left: 10px; }
 .next { right: 10px; }
 
