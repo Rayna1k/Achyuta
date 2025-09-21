@@ -121,26 +121,28 @@ header nav a:hover {
 /* ======================
    Slider Styles
 ====================== */
+/* Slider container matches product card */
 .slider {
-  width: 100%;
-  max-width: 280px;   /* Adjust to match product-card width */
-  margin: 0 auto 15px auto;
+  width: 100%;          /* Takes full width of product-card */
   overflow: hidden;
   position: relative;
   border-radius: 8px;
 }
 
+/* Slides row */
 .slides {
-  display: flex;
+  display: flex;        /* Arrange images in a row */
   transition: transform 0.5s ease;
 }
 
+/* Each image takes full slider width */
 .slides img {
-  width: 100%;
-  flex-shrink: 0;
-  object-fit: contain; /* ensures full image is visible */
+  width: 100%;          /* Each image = width of slider */
+  flex-shrink: 0;       /* Prevent images from shrinking */
+  object-fit: contain;  /* Keep full image visible */
   border-radius: 8px;
 }
+
 
 /* Slider Buttons */
 .slider .prev,
