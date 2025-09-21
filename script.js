@@ -50,3 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+function updateSlide() {
+  const imageWidth = images[0].clientWidth; // get actual width dynamically
+  slides.style.transform = `translateX(-${currentIndex * imageWidth}px)`; 
+}
+
+window.addEventListener("resize", updateSlide); // Update on resize
+
